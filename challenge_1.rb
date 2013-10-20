@@ -13,11 +13,13 @@
 #   we usually have to do some research on how the task is done:
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
-# =========================================
-# Your code to define the method goes here.
-# =========================================
+
 
 def pmt(interest_rate, number_of_payments, present_value)
+
+monthly_payment = (interest_rate*present_value)/(1-(1+interest_rate)**(-1*number_of_payments))
+
+return monthly_payment
 
 end
 
